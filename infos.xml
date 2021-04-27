@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+    <title><![CDATA[Exclude Sitemap]]></title>
+    <author><![CDATA[Philippe Maladjian]]></author>
+    <version>1.0</version>
+    <date>27/04/2021</date>
+    <site>https://philippe-maladjian.fr</site>
+    <description><![CDATA[Permet de définir une liste de catégories d'articles non visible dans le fichier sitemap.php.]]></description>
+    <scope>site</scope>
+</document>
