@@ -2,9 +2,11 @@ excludeSitemap
 ====
 Plugin pour [PluXml](https://pluxml.org) permettant de ne pas lister des catégories et les articles de ces catégories dans le fichier [sitemap.php](https://www.sitemaps.org/fr/).
 
+fork . Permet aussi de filtrer les pages statiques
+
 Limitation
 ====
-Testé sur PluXml 5.8.2
+Testé sur PluXml 5.8.9  / php 8.1.5
 
 Configuration
 ====
