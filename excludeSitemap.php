@@ -20,12 +20,12 @@ class excludeSitemap extends plxPlugin {
    * Merci bazooka07 pour l'aide
    */
   public function SitemapBegin() {
-    global $plxMotor;
+    //global $plxMotor;
 
     $excludeCat = trim($this->getParam('excludeSitemap'));
+    $excludeStat = trim($this->getParam('excludeStatSitemap'));
     echo self::BEGIN_CODE;
     ?>
-
     if(!empty('<?= $excludeCat ?>')) {
       $cat = array_keys($plxMotor->aCats);
       $exclude = explode('|', '<?= $excludeCat ?>');
@@ -35,6 +35,14 @@ class excludeSitemap extends plxPlugin {
       $activeCats = explode('|', $plxMotor->activeCats);
       $activeCats = array_diff($activeCats, $exclude);
       $plxMotor->activeCats = implode('|', $activeCats);
+    }
+    
+    if(!empty('<?= $excludeStat ?>')) {
+      $stat = array_keys($plxMotor->aStats);
+      $excludeStat = explode('|', '<?= $excludeStat ?>');
+      foreach ($stat as $k) {
+       if(in_array($k, $excludeStat)) unset($plxMotor->aStats[$k]);
+      }
     }
 
   <?php
