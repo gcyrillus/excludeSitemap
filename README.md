@@ -17,6 +17,9 @@ Par exemple :
 
 Changelog
 ====
+* 1.1- 17/04/2023
+  * fork - ajout filtrage des pages statiques
+  
 * 1.0 - 27/04/2021
   * Version initial
 
